@@ -21,3 +21,11 @@ git clone https://github.com/wpumacay/test_submodules.git
 git submodule update --init --depth 1
 ```
 
+For submodule *adds* the following is the way that allowed me to make
+a shallow add of the submodule.
+
+```shell
+# Add submodule (shallow way)
+git submodule add --depth=1 https://github.com/wpumacay/bullet3.git
+```
+
